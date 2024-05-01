@@ -13,6 +13,11 @@ const rl = readline.createInterface({
 
 let messageId = 1; // keep track of the message id
 
+//write a message to the terminal
+console.log(
+  "Type a message down below and press enter to send a chat message:"
+);
+
 // listener for chat message from terminal
 rl.on("line", (input) => {
   const message = {
